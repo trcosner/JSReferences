@@ -24,6 +24,9 @@ data.forEach(function(item){
 console.timeEnd('forEach Map');
 
 //Reduce Implementation of Map
+//Reduce and map typically have similar execution times
+//the difference is reduce can also implement array.Filter
+//whereas .map().filer() loops executes at O(2n)
 console.time('Reduce Map');
 data.reduce(function(acc, item){
   obj = {
